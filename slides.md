@@ -137,7 +137,7 @@ layoutClass: gap-8
   <span class="text-gray-600 dark:text-gray-400">🇺🇸/🇬🇧</span> /ˈoʊpəs/
 </div>
 
-<div class="p-4 bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900 dark:to-blue-800 rounded-xl mb-6 border-l-4 border-blue-500">
+<div v-click class="p-4 bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900 dark:to-blue-800 rounded-xl mb-6 border-l-4 border-blue-500">
   <div class="text-sm text-blue-600 dark:text-blue-300 font-semibold mb-2">词性与释义</div>
   <div class="text-lg">
     <span class="text-blue-700 dark:text-blue-200 font-bold">n.</span> 
@@ -145,14 +145,14 @@ layoutClass: gap-8
   </div>
 </div>
 
-<div class="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-xl mb-4 border border-blue-200 dark:border-blue-700">
+<div v-click class="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-xl mb-4 border border-blue-200 dark:border-blue-700">
   <div class="text-sm text-blue-600 dark:text-blue-300 font-semibold mb-2">📝 例句</div>
   <div class="text-base leading-relaxed">
-    This symphony is the composer's <span v-mark.highlight.yellow="1" class="whitespace-nowrap">greatest opus</span>, blending classical and modern elements seamlessly.
+    This symphony is the composer's <span v-mark.highlight.yellow="2" class="whitespace-nowrap">greatest opus</span>, blending classical and modern elements seamlessly.
   </div>
 </div>
 
-<div class="p-4 bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/40 dark:to-blue-800/40 rounded-xl border-l-4 border-blue-500">
+<div v-click class="p-4 bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/40 dark:to-blue-800/40 rounded-xl border-l-4 border-blue-500">
   <div class="text-sm text-blue-600 dark:text-blue-300 font-semibold mb-2">中文释义</div>
   <div class="text-base">
   这首交响乐是这位作曲家<span class="text-blue-600 dark:text-blue-300 font-bold">最伟大的作品</span>，完美融合了古典与现代元素。
@@ -161,6 +161,7 @@ layoutClass: gap-8
 
 ::right::
 
+<v-click>
 <div class="mt-4">
   <img src="https://images.pexels.com/photos/164821/pexels-photo-164821.jpeg?auto=compress&cs=tinysrgb&w=600" class="rounded-lg shadow-lg max-h-48 w-auto" alt="Sheet music and violin" />
   <div class="text-xs text-gray-400 mt-2">图：音乐作品与乐谱</div>
@@ -175,6 +176,7 @@ layoutClass: gap-8
         🇬🇧 英式
   </button>
 </div>
+</v-click>
 
 <script setup>
 const speak = (word, lang) => {
@@ -216,7 +218,7 @@ layoutClass: gap-8
   <span class="text-gray-600 dark:text-gray-400">🇺🇸/🇬🇧</span> /ˌiːkwɪˈlɪbriəm/
 </div>
 
-<div class="p-4 bg-gradient-to-r from-green-50 to-emerald-100 dark:from-green-900 dark:to-emerald-800 rounded-xl mb-6 border-l-4 border-green-500">
+<div v-click class="p-4 bg-gradient-to-r from-green-50 to-emerald-100 dark:from-green-900 dark:to-emerald-800 rounded-xl mb-6 border-l-4 border-green-500">
   <div class="text-sm text-green-600 dark:text-green-300 font-semibold mb-2">词性与释义</div>
   <div class="text-lg">
     <span class="text-green-700 dark:text-green-200 font-bold">n.</span> 
@@ -224,14 +226,14 @@ layoutClass: gap-8
   </div>
 </div>
 
-<div class="p-4 bg-green-50 dark:bg-green-900/20 rounded-xl mb-4 border border-green-200 dark:border-green-700">
+<div v-click class="p-4 bg-green-50 dark:bg-green-900/20 rounded-xl mb-4 border border-green-200 dark:border-green-700">
   <div class="text-sm text-green-600 dark:text-green-300 font-semibold mb-2">📝 例句</div>
   <div class="text-base leading-relaxed">
-    The ecosystem maintains a <span v-mark.highlight.green="1" class="whitespace-nowrap">delicate equilibrium</span> between predators and prey to avoid overpopulation.
+    The ecosystem maintains a <span v-mark.highlight.green="2" class="whitespace-nowrap">delicate equilibrium</span> between predators and prey to avoid overpopulation.
   </div>
 </div>
 
-<div class="p-4 bg-gradient-to-r from-green-50 to-emerald-100 dark:from-green-900/40 dark:to-emerald-800/40 rounded-xl border-l-4 border-green-500">
+<div v-click class="p-4 bg-gradient-to-r from-green-50 to-emerald-100 dark:from-green-900/40 dark:to-emerald-800/40 rounded-xl border-l-4 border-green-500">
   <div class="text-sm text-green-600 dark:text-green-300 font-semibold mb-2">中文释义</div>
   <div class="text-base">
   生态系统在捕食者和猎物之间维持着<span class="text-green-600 dark:text-green-300 font-bold">微妙的平衡</span>，以避免种群数量过剩。
@@ -240,9 +242,10 @@ layoutClass: gap-8
 
 ::right::
 
+<v-click>
 <div class="mt-4">
-  <img src="https://images.pexels.com/photos/3791466/pexels-photo-3791466.jpeg?auto=compress&cs=tinysrgb&w=600" class="rounded-lg shadow-lg max-h-48 w-auto" alt="Balance stones" />
-  <div class="text-xs text-gray-400 mt-2">图：平衡的石头</div>
+  <img src="/public/vinicius-amnx-amano-p-m7aYg9RL8-unsplash.jpg" class="rounded-lg shadow-lg max-h-48 w-auto" alt="Balance stones" />
+  <div class="text-xs text-gray-400 mt-2">图：一杯咖啡正被倒入相机中（？</div>
 </div>
 
 <div class="mt-8 p-4 bg-green-50 dark:bg-green-900 rounded-lg">
@@ -254,6 +257,7 @@ layoutClass: gap-8
     🇬🇧 英式
   </button>
 </div>
+</v-click>
 
 <script setup>
 const speak = (word, lang) => {
@@ -295,7 +299,7 @@ layoutClass: gap-8
   <span class="text-gray-600 dark:text-gray-400">🇺🇸/🇬🇧</span> /ˈstæɡərɪŋ/
 </div>
 
-<div class="p-4 bg-gradient-to-r from-red-50 to-rose-100 dark:from-red-900 dark:to-rose-800 rounded-xl mb-6 border-l-4 border-red-500">
+<div v-click class="p-4 bg-gradient-to-r from-red-50 to-rose-100 dark:from-red-900 dark:to-rose-800 rounded-xl mb-6 border-l-4 border-red-500">
   <div class="text-sm text-red-600 dark:text-red-300 font-semibold mb-2">词性与释义</div>
   <div class="text-lg">
     <span class="text-red-700 dark:text-red-200 font-bold">adj.</span> 
@@ -303,14 +307,14 @@ layoutClass: gap-8
   </div>
 </div>
 
-<div class="p-4 bg-red-50 dark:bg-red-900/20 rounded-xl mb-4 border border-red-200 dark:border-red-700">
+<div v-click class="p-4 bg-red-50 dark:bg-red-900/20 rounded-xl mb-4 border border-red-200 dark:border-red-700">
   <div class="text-sm text-red-600 dark:text-red-300 font-semibold mb-2">📝 例句</div>
   <div class="text-base leading-relaxed">
-    The project required a <span v-mark.highlight.red="1" class="whitespace-nowrap">staggering amount</span> of funding, far exceeding our initial budget estimates.
+    The project required a <span v-mark.highlight.red="2" class="whitespace-nowrap">staggering amount</span> of funding, far exceeding our initial budget estimates.
   </div>
 </div>
 
-<div class="p-4 bg-gradient-to-r from-red-50 to-rose-100 dark:from-red-900/40 dark:to-rose-800/40 rounded-xl border-l-4 border-red-500">
+<div v-click class="p-4 bg-gradient-to-r from-red-50 to-rose-100 dark:from-red-900/40 dark:to-rose-800/40 rounded-xl border-l-4 border-red-500">
   <div class="text-sm text-red-600 dark:text-red-300 font-semibold mb-2">中文释义</div>
   <div class="text-base">
   这个项目需要<span class="text-red-600 dark:text-red-300 font-bold">惊人的资金</span>投入，远超我们最初的预算估计。
@@ -319,9 +323,10 @@ layoutClass: gap-8
 
 ::right::
 
+<v-click>
 <div class="mt-4">
-  <img src="https://images.pexels.com/photos/259027/pexels-photo-259027.jpeg?auto=compress&cs=tinysrgb&w=600" class="rounded-lg shadow-lg max-h-48 w-auto" alt="Financial growth chart" />
-  <div class="text-xs text-gray-400 mt-2">图：惊人的财务增长</div>
+  <img src="/public/dfbad136-4a61-4634-9e22-98881373a462.png" class="rounded-lg shadow-lg max-h-48 w-auto" alt="Financial growth chart" />
+  <div class="text-xs text-gray-400 mt-2">图：震惊Nig***(N word)</div>
 </div>
 
 <div class="mt-8 p-4 bg-red-50 dark:bg-red-900 rounded-lg">
@@ -333,6 +338,7 @@ layoutClass: gap-8
     🇬🇧 英式
   </button>
 </div>
+</v-click>
 
 <script setup>
 const speak = (word, lang) => {
@@ -375,7 +381,7 @@ layoutClass: gap-8
   <div><span class="text-gray-600 dark:text-gray-400">🇬🇧</span> /ˌɑːməˈmenteəriəm/</div>
 </div>
 
-<div class="p-4 bg-gradient-to-r from-purple-50 to-violet-100 dark:from-purple-900 dark:to-violet-800 rounded-xl mb-6 border-l-4 border-purple-500">
+<div v-click class="p-4 bg-gradient-to-r from-purple-50 to-violet-100 dark:from-purple-900 dark:to-violet-800 rounded-xl mb-6 border-l-4 border-purple-500">
   <div class="text-sm text-purple-600 dark:text-purple-300 font-semibold mb-2">词性与释义</div>
   <div class="text-base">
     <span class="text-purple-700 dark:text-purple-200 font-bold">n.</span> 
@@ -383,14 +389,14 @@ layoutClass: gap-8
   </div>
 </div>
 
-<div class="p-4 bg-purple-50 dark:bg-purple-900/20 rounded-xl mb-4 border border-purple-200 dark:border-purple-700">
+<div v-click class="p-4 bg-purple-50 dark:bg-purple-900/20 rounded-xl mb-4 border border-purple-200 dark:border-purple-700">
   <div class="text-sm text-purple-600 dark:text-purple-300 font-semibold mb-2">📝 例句</div>
   <div class="text-sm leading-relaxed">
-    A doctor's <span v-mark.highlight.purple="1" class="whitespace-nowrap">armamentarium</span> includes not only medical tools but also years of clinical experience and empathy.
+    A doctor's <span v-mark.highlight.purple="2" class="whitespace-nowrap">armamentarium</span> includes not only medical tools but also years of clinical experience and empathy.
   </div>
 </div>
 
-<div class="p-4 bg-gradient-to-r from-purple-50 to-violet-100 dark:from-purple-900/40 dark:to-violet-800/40 rounded-xl border-l-4 border-purple-500">
+<div v-click class="p-4 bg-gradient-to-r from-purple-50 to-violet-100 dark:from-purple-900/40 dark:to-violet-800/40 rounded-xl border-l-4 border-purple-500">
   <div class="text-sm text-purple-600 dark:text-purple-300 font-semibold mb-2">中文释义</div>
   <div class="text-sm">
   医生的<span class="text-purple-600 dark:text-purple-300 font-bold">诊疗手段</span>不仅包括医疗工具，还涵盖多年的临床经验与同理心。
@@ -399,8 +405,9 @@ layoutClass: gap-8
 
 ::right::
 
+<v-click>
 <div class="mt-4">
-  <img src="https://images.pexels.com/photos/3845810/pexels-photo-3845810.jpeg?auto=compress&cs=tinysrgb&w=600" class="rounded-lg shadow-lg" alt="Medical instruments" />
+  <img src="/public/cdc-XLhDvfz0sUM-unsplash.jpg" class="rounded-lg shadow-lg" alt="Medical instruments" />
   <div class="text-xs text-gray-400 mt-2">图：医疗器械与工具</div>
 </div>
 
@@ -419,6 +426,7 @@ layoutClass: gap-8
     <span class="text-xs text-gray-500">/ˌɑːməˈmentɛəriəm/</span>
   </div>
 </div>
+</v-click>
 
 <script setup>
 const speak = (word, lang) => {
@@ -460,7 +468,7 @@ layoutClass: gap-8
   <span class="text-gray-600 dark:text-gray-400">🇺🇸/🇬🇧</span> /ˈætəm/
 </div>
 
-<div class="p-4 bg-gradient-to-r from-cyan-50 to-sky-100 dark:from-cyan-900 dark:to-sky-800 rounded-xl mb-6 border-l-4 border-cyan-500">
+<div v-click class="p-4 bg-gradient-to-r from-cyan-50 to-sky-100 dark:from-cyan-900 dark:to-sky-800 rounded-xl mb-6 border-l-4 border-cyan-500">
   <div class="text-sm text-cyan-600 dark:text-cyan-300 font-semibold mb-2">词性与释义</div>
   <div class="text-lg">
     <span class="text-cyan-700 dark:text-cyan-200 font-bold">n.</span> 
@@ -468,14 +476,14 @@ layoutClass: gap-8
   </div>
 </div>
 
-<div class="p-4 bg-cyan-50 dark:bg-cyan-900/20 rounded-xl mb-4 border border-cyan-200 dark:border-cyan-700">
+<div v-click class="p-4 bg-cyan-50 dark:bg-cyan-900/20 rounded-xl mb-4 border border-cyan-200 dark:border-cyan-700">
   <div class="text-sm text-cyan-600 dark:text-cyan-300 font-semibold mb-2">📝 例句</div>
   <div class="text-base leading-relaxed">
-    An <span v-mark.highlight.cyan="1" class="whitespace-nowrap">atom of hydrogen</span> is the simplest and lightest particle in the periodic table of elements.
+    An <span v-mark.highlight.cyan="2" class="whitespace-nowrap">atom of hydrogen</span> is the simplest and lightest particle in the periodic table of elements.
   </div>
 </div>
 
-<div class="p-4 bg-gradient-to-r from-cyan-50 to-sky-100 dark:from-cyan-900/40 dark:to-sky-800/40 rounded-xl border-l-4 border-cyan-500">
+<div v-click class="p-4 bg-gradient-to-r from-cyan-50 to-sky-100 dark:from-cyan-900/40 dark:to-sky-800/40 rounded-xl border-l-4 border-cyan-500">
   <div class="text-sm text-cyan-600 dark:text-cyan-300 font-semibold mb-2">中文释义</div>
   <div class="text-base">
   <span class="text-cyan-600 dark:text-cyan-300 font-bold">氢原子</span>是元素周期表中最简单、最轻的粒子。
@@ -484,8 +492,9 @@ layoutClass: gap-8
 
 ::right::
 
+<v-click>
 <div class="mt-4">
-  <img src="https://images.pexels.com/photos/2280547/pexels-photo-2280547.jpeg?auto=compress&cs=tinysrgb&w=600" class="rounded-lg shadow-lg max-h-48 w-auto" alt="Molecular structure" />
+  <img src="/public/ayush-kumar-9Njoam3Vesc-unsplash.jpg" class="rounded-lg shadow-lg max-h-48 w-auto" alt="Molecular structure" />
   <div class="text-xs text-gray-400 mt-2">图：分子结构模型</div>
 </div>
 
@@ -498,6 +507,7 @@ layoutClass: gap-8
     🇬🇧 英式
   </button>
 </div>
+</v-click>
 
 <script setup>
 const speak = (word, lang) => {
@@ -540,7 +550,7 @@ layoutClass: gap-8
   <div><span class="text-gray-600 dark:text-gray-400">🇬🇧</span> /sɜːˈkeɪdiən/</div>
 </div>
 
-<div class="p-4 bg-gradient-to-r from-teal-50 to-cyan-100 dark:from-teal-900 dark:to-cyan-800 rounded-xl mb-6 border-l-4 border-teal-500">
+<div v-click class="p-4 bg-gradient-to-r from-teal-50 to-cyan-100 dark:from-teal-900 dark:to-cyan-800 rounded-xl mb-6 border-l-4 border-teal-500">
   <div class="text-sm text-teal-600 dark:text-teal-300 font-semibold mb-2">词性与释义</div>
   <div class="text-lg">
     <span class="text-teal-700 dark:text-teal-200 font-bold">adj.</span> 
@@ -548,14 +558,14 @@ layoutClass: gap-8
   </div>
 </div>
 
-<div class="p-4 bg-teal-50 dark:bg-teal-900/20 rounded-xl mb-4 border border-teal-200 dark:border-teal-700">
+<div v-click class="p-4 bg-teal-50 dark:bg-teal-900/20 rounded-xl mb-4 border border-teal-200 dark:border-teal-700">
   <div class="text-sm text-teal-600 dark:text-teal-300 font-semibold mb-2">📝 例句</div>
   <div class="text-base leading-relaxed">
-    Jet lag disrupts your <span v-mark.highlight.teal="1" class="whitespace-nowrap">circadian rhythm</span>, making it hard to sleep or stay awake at the right times.
+    Jet lag disrupts your <span v-mark.highlight.teal="2" class="whitespace-nowrap">circadian rhythm</span>, making it hard to sleep or stay awake at the right times.
   </div>
 </div>
 
-<div class="p-4 bg-gradient-to-r from-teal-50 to-cyan-100 dark:from-teal-900/40 dark:to-cyan-800/40 rounded-xl border-l-4 border-teal-500">
+<div v-click class="p-4 bg-gradient-to-r from-teal-50 to-cyan-100 dark:from-teal-900/40 dark:to-cyan-800/40 rounded-xl border-l-4 border-teal-500">
   <div class="text-sm text-teal-600 dark:text-teal-300 font-semibold mb-2">中文释义</div>
   <div class="text-base">
   时差会打乱你的<span class="text-teal-600 dark:text-teal-300 font-bold">昼夜节律</span>，让你难以在合适的时间入睡或保持清醒。
@@ -564,9 +574,10 @@ layoutClass: gap-8
 
 ::right::
 
+<v-click>
 <div class="mt-4">
-  <img src="https://images.pexels.com/photos/1037993/pexels-photo-1037993.jpeg?auto=compress&cs=tinysrgb&w=600" class="rounded-lg shadow-lg max-h-48 w-auto" alt="Clock and sunrise" />
-  <div class="text-xs text-gray-400 mt-2">图：时间与生物节律</div>
+  <img src="/public/luguanluguanluguan.png" class="rounded-lg shadow-lg max-h-48 w-auto" alt="Clock and sunrise" />
+  <div class="text-xs text-gray-400 mt-2">图：时间与生物节律（？</div>
 </div>
 
 <div class="mt-8 p-4 bg-teal-50 dark:bg-teal-900 rounded-lg">
@@ -584,6 +595,7 @@ layoutClass: gap-8
     <span class="text-xs text-gray-500">/sɜːˈkeɪdiən/</span>
   </div>
 </div>
+</v-click>
 
 <script setup>
 const speak = (word, lang) => {
@@ -625,7 +637,7 @@ layoutClass: gap-8
   <span class="text-gray-600 dark:text-gray-400">🇺🇸/🇬🇧</span> /vaɪˈbreɪʃən/
 </div>
 
-<div class="p-4 bg-gradient-to-r from-pink-50 to-rose-100 dark:from-pink-900 dark:to-rose-800 rounded-xl mb-6 border-l-4 border-pink-500">
+<div v-click class="p-4 bg-gradient-to-r from-pink-50 to-rose-100 dark:from-pink-900 dark:to-rose-800 rounded-xl mb-6 border-l-4 border-pink-500">
   <div class="text-sm text-pink-600 dark:text-pink-300 font-semibold mb-2">词性与释义</div>
   <div class="text-lg">
     <span class="text-pink-700 dark:text-pink-200 font-bold">n.</span> 
@@ -633,14 +645,14 @@ layoutClass: gap-8
   </div>
 </div>
 
-<div class="p-4 bg-pink-50 dark:bg-pink-900/20 rounded-xl mb-4 border border-pink-200 dark:border-pink-700">
+<div v-click class="p-4 bg-pink-50 dark:bg-pink-900/20 rounded-xl mb-4 border border-pink-200 dark:border-pink-700">
   <div class="text-sm text-pink-600 dark:text-pink-300 font-semibold mb-2">📝 例句</div>
   <div class="text-base leading-relaxed">
-    The soothing <span v-mark.highlight.pink="1" class="whitespace-nowrap">vibration</span> of the tuning fork helped the patient focus, easing their anxiety before the acupuncture treatment.
+    The soothing <span v-mark.highlight.pink="2" class="whitespace-nowrap">vibration</span> of the tuning fork helped the patient focus, easing their anxiety before the acupuncture treatment.
   </div>
 </div>
 
-<div class="p-4 bg-gradient-to-r from-pink-50 to-rose-100 dark:from-pink-900/40 dark:to-rose-800/40 rounded-xl border-l-4 border-pink-500">
+<div v-click class="p-4 bg-gradient-to-r from-pink-50 to-rose-100 dark:from-pink-900/40 dark:to-rose-800/40 rounded-xl border-l-4 border-pink-500">
   <div class="text-sm text-pink-600 dark:text-pink-300 font-semibold mb-2">中文释义</div>
   <div class="text-base">
   音叉舒缓的<span class="text-pink-600 dark:text-pink-300 font-bold">振动</span>帮助患者集中注意力，缓解了他们在针灸治疗前的焦虑。
@@ -649,9 +661,10 @@ layoutClass: gap-8
 
 ::right::
 
+<v-click>
 <div class="mt-4">
-  <img src="https://images.pexels.com/photos/6969600/pexels-photo-6969600.jpeg?auto=compress&cs=tinysrgb&w=600" class="rounded-lg shadow-lg max-h-48 w-auto" alt="Tuning fork vibration" />
-  <div class="text-xs text-gray-400 mt-2">图：音叉振动</div>
+  <img src="/public/tyler-clemmensen-TW-wknV1oZo-unsplash.jpg" class="rounded-lg shadow-lg max-h-48 w-auto" alt="Tuning fork vibration" />
+  <div class="text-xs text-gray-400 mt-2">图：Gibson Les Paul</div>
 </div>
 
 <div class="mt-8 p-4 bg-pink-50 dark:bg-pink-900 rounded-lg">
@@ -663,6 +676,7 @@ layoutClass: gap-8
     🇬🇧 英式
   </button>
 </div>
+</v-click>
 
 <script setup>
 const speak = (word, lang) => {
@@ -704,7 +718,7 @@ layoutClass: gap-8
   <span class="text-gray-600 dark:text-gray-400">🇺🇸/🇬🇧</span> /ˈblædər/
 </div>
 
-<div class="p-4 bg-gradient-to-r from-amber-50 to-orange-100 dark:from-amber-900 dark:to-orange-800 rounded-xl mb-6 border-l-4 border-amber-500">
+<div v-click class="p-4 bg-gradient-to-r from-amber-50 to-orange-100 dark:from-amber-900 dark:to-orange-800 rounded-xl mb-6 border-l-4 border-amber-500">
   <div class="text-sm text-amber-600 dark:text-amber-300 font-semibold mb-2">词性与释义</div>
   <div class="text-base">
     <span class="text-amber-700 dark:text-amber-200 font-bold">n.</span> 
@@ -712,14 +726,14 @@ layoutClass: gap-8
   </div>
 </div>
 
-<div class="p-4 bg-amber-50 dark:bg-amber-900/20 rounded-xl mb-4 border border-amber-200 dark:border-amber-700">
+<div v-click class="p-4 bg-amber-50 dark:bg-amber-900/20 rounded-xl mb-4 border border-amber-200 dark:border-amber-700">
   <div class="text-sm text-amber-600 dark:text-amber-300 font-semibold mb-2">📝 例句</div>
   <div class="text-sm leading-relaxed">
-    The nurse's calm explanation about the <span v-mark.highlight.orange="1" class="whitespace-nowrap">bladder scan</span> greatly reassured the elderly patient, transforming a potentially embarrassing procedure into an experience of dignity and care.
+    The nurse's calm explanation about the <span v-mark.highlight.orange="2" class="whitespace-nowrap">bladder scan</span> greatly reassured the elderly patient, transforming a potentially embarrassing procedure into an experience of dignity and care.
   </div>
 </div>
 
-<div class="p-4 bg-gradient-to-r from-amber-50 to-orange-100 dark:from-amber-900/40 dark:to-orange-800/40 rounded-xl border-l-4 border-amber-500">
+<div v-click class="p-4 bg-gradient-to-r from-amber-50 to-orange-100 dark:from-amber-900/40 dark:to-orange-800/40 rounded-xl border-l-4 border-amber-500">
   <div class="text-sm text-amber-600 dark:text-amber-300 font-semibold mb-2">中文释义</div>
   <div class="text-sm leading-relaxed">
   护士关于<span class="text-amber-600 dark:text-amber-300 font-bold">膀胱扫描</span>的平静解释极大地安抚了那位老年患者，将一个可能令人尴尬的检查过程，转化为一次充满尊严与关怀的体验。
@@ -728,9 +742,10 @@ layoutClass: gap-8
 
 ::right::
 
+<v-click>
 <div class="mt-2">
-  <img src="https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=600" class="rounded-lg shadow-lg max-h-48 w-auto" alt="Healthcare professional" />
-  <div class="text-xs text-gray-400 mt-2">图：医疗专业人员</div>
+  <img src="/public/7f10f03f-210d-4ea4-8fb4-4cde16b75c1f.png" class="rounded-lg shadow-lg max-h-48 w-auto" alt="Healthcare professional" />
+  <div class="text-xs text-gray-400 mt-2">图：躺在病床上的doro</div>
 </div>
 
 <div class="mt-8 p-4 bg-amber-50 dark:bg-amber-900 rounded-lg">
@@ -742,6 +757,7 @@ layoutClass: gap-8
     🇬🇧 英式
   </button>
 </div>
+</v-click>
 
 <script setup>
 const speak = (word, lang) => {
@@ -784,7 +800,7 @@ layoutClass: gap-8
   <div><span class="text-gray-600 dark:text-gray-400">🇬🇧</span> /ˈfɔːmjʊlə/</div>
 </div>
 
-<div class="p-4 bg-gradient-to-r from-lime-50 to-green-100 dark:from-lime-900 dark:to-green-800 rounded-xl mb-6 border-l-4 border-lime-500">
+<div v-click class="p-4 bg-gradient-to-r from-lime-50 to-green-100 dark:from-lime-900 dark:to-green-800 rounded-xl mb-6 border-l-4 border-lime-500">
   <div class="text-sm text-lime-600 dark:text-lime-300 font-semibold mb-2">词性与释义</div>
   <div class="text-base">
     <span class="text-lime-700 dark:text-lime-200 font-bold">n.</span> 
@@ -792,14 +808,14 @@ layoutClass: gap-8
   </div>
 </div>
 
-<div class="p-4 bg-lime-50 dark:bg-lime-900/20 rounded-xl mb-4 border border-lime-200 dark:border-lime-700">
+<div v-click class="p-4 bg-lime-50 dark:bg-lime-900/20 rounded-xl mb-4 border border-lime-200 dark:border-lime-700">
   <div class="text-sm text-lime-600 dark:text-lime-300 font-semibold mb-2">📝 例句</div>
   <div class="text-sm leading-relaxed">
-    The success of this traditional herbal <span v-mark.highlight.yellow="1" class="whitespace-nowrap">formula</span> lies not only in its ingredients but also in the healer's careful adjustment of proportions according to the patient's specific condition.
+    The success of this traditional herbal <span v-mark.highlight.yellow="2" class="whitespace-nowrap">formula</span> lies not only in its ingredients but also in the healer's careful adjustment of proportions according to the patient's specific condition.
   </div>
 </div>
 
-<div class="p-4 bg-gradient-to-r from-lime-50 to-green-100 dark:from-lime-900/40 dark:to-green-800/40 rounded-xl border-l-4 border-lime-500">
+<div v-click class="p-4 bg-gradient-to-r from-lime-50 to-green-100 dark:from-lime-900/40 dark:to-green-800/40 rounded-xl border-l-4 border-lime-500">
   <div class="text-sm text-lime-600 dark:text-lime-300 font-semibold mb-2">中文释义</div>
   <div class="text-sm leading-relaxed">
   这一传统草药<span class="text-lime-600 dark:text-lime-300 font-bold">配方</span>的成功不仅在于其成分，还在于医者根据患者具体病情对配比的精心调整，体现了一种整体治疗的观念。
@@ -808,9 +824,10 @@ layoutClass: gap-8
 
 ::right::
 
+<v-click>
 <div class="mt-2">
   <img src="https://images.pexels.com/photos/3873146/pexels-photo-3873146.jpeg?auto=compress&cs=tinysrgb&w=600" class="rounded-lg shadow-lg max-h-48 w-auto" alt="Herbal medicine ingredients" />
-  <div class="text-xs text-gray-400 mt-2">图：草药配方原料</div>
+  <div class="text-xs text-gray-400 mt-2">图：处方药</div>
 </div>
 
 <div class="mt-8 p-4 bg-lime-50 dark:bg-lime-900 rounded-lg">
@@ -828,6 +845,7 @@ layoutClass: gap-8
     <span class="text-xs text-gray-500">/ˈfɔːmjʊlə/</span>
   </div>
 </div>
+</v-click>
 
 <script setup>
 const speak = (word, lang) => {
@@ -869,7 +887,7 @@ layoutClass: gap-8
   <span class="text-gray-600 dark:text-gray-400">🇺🇸/🇬🇧</span> /ˈjɑːrdˌstɪk/
 </div>
 
-<div class="p-4 bg-gradient-to-r from-indigo-50 to-blue-100 dark:from-indigo-900 dark:to-blue-800 rounded-xl mb-6 border-l-4 border-indigo-500">
+<div v-click class="p-4 bg-gradient-to-r from-indigo-50 to-blue-100 dark:from-indigo-900 dark:to-blue-800 rounded-xl mb-6 border-l-4 border-indigo-500">
   <div class="text-sm text-indigo-600 dark:text-indigo-300 font-semibold mb-2">词性与释义</div>
   <div class="text-lg">
     <span class="text-indigo-700 dark:text-indigo-200 font-bold">n.</span> 
@@ -877,14 +895,14 @@ layoutClass: gap-8
   </div>
 </div>
 
-<div class="p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-xl mb-4 border border-indigo-200 dark:border-indigo-700">
+<div v-click class="p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-xl mb-4 border border-indigo-200 dark:border-indigo-700">
   <div class="text-sm text-indigo-600 dark:text-indigo-300 font-semibold mb-2">📝 例句</div>
   <div class="text-base leading-relaxed">
-    While symptom relief is an important <span v-mark.highlight.blue="1" class="whitespace-nowrap">yardstick</span>, true healing also requires attention to the patient's emotional and psychological recovery.
+    While symptom relief is an important <span v-mark.highlight.blue="2" class="whitespace-nowrap">yardstick</span>, true healing also requires attention to the patient's emotional and psychological recovery.
   </div>
 </div>
 
-<div class="p-4 bg-gradient-to-r from-indigo-50 to-blue-100 dark:from-indigo-900/40 dark:to-blue-800/40 rounded-xl border-l-4 border-indigo-500">
+<div v-click class="p-4 bg-gradient-to-r from-indigo-50 to-blue-100 dark:from-indigo-900/40 dark:to-blue-800/40 rounded-xl border-l-4 border-indigo-500">
   <div class="text-sm text-indigo-600 dark:text-indigo-300 font-semibold mb-2">中文释义</div>
   <div class="text-base">
   虽然症状缓解是一个重要的<span class="text-indigo-600 dark:text-indigo-300 font-bold">衡量标准</span>，但真正的康复还需要关注患者情感和心理的恢复。
@@ -893,9 +911,10 @@ layoutClass: gap-8
 
 ::right::
 
+<v-click>
 <div class="mt-4">
-  <img src="https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=600" class="rounded-lg shadow-lg max-h-48 w-auto" alt="Measuring standards" />
-  <div class="text-xs text-gray-400 mt-2">图：衡量与评估</div>
+  <img src="/public/marek-studzinski-Z-GpmD18Q7E-unsplash.jpg" class="rounded-lg shadow-lg max-h-48 w-auto" alt="Measuring standards" />
+  <div class="text-xs text-gray-400 mt-2">图：铅笔与尺子</div>
 </div>
 
 <div class="mt-8 p-4 bg-indigo-50 dark:bg-indigo-900 rounded-lg">
@@ -913,6 +932,7 @@ layoutClass: gap-8
     <span class="text-xs text-gray-500">/ˈjɑːdˌstɪk/</span>
   </div>
 </div>
+</v-click>
 
 <script setup>
 const speak = (word, lang) => {
@@ -954,7 +974,7 @@ layoutClass: gap-8
   <span class="text-gray-600 dark:text-gray-400">🇺🇸/🇬🇧</span> /ˈælkəˌlɔɪd/
 </div>
 
-<div class="p-4 bg-gradient-to-r from-rose-50 to-pink-100 dark:from-rose-900 dark:to-pink-800 rounded-xl mb-6 border-l-4 border-rose-500">
+<div v-click class="p-4 bg-gradient-to-r from-rose-50 to-pink-100 dark:from-rose-900 dark:to-pink-800 rounded-xl mb-6 border-l-4 border-rose-500">
   <div class="text-sm text-rose-600 dark:text-rose-300 font-semibold mb-2">词性与释义</div>
   <div class="text-lg">
     <span class="text-rose-700 dark:text-rose-200 font-bold">n.</span> 
@@ -962,14 +982,14 @@ layoutClass: gap-8
   </div>
 </div>
 
-<div class="p-4 bg-rose-50 dark:bg-rose-900/20 rounded-xl mb-4 border border-rose-200 dark:border-rose-700">
+<div v-click class="p-4 bg-rose-50 dark:bg-rose-900/20 rounded-xl mb-4 border border-rose-200 dark:border-rose-700">
   <div class="text-sm text-rose-600 dark:text-rose-300 font-semibold mb-2">📝 例句</div>
   <div class="text-base leading-relaxed">
-    The potent <span v-mark.highlight.red="1" class="whitespace-nowrap">alkaloid</span> serves as a double-edged sword in medicine, offering profound relief while demanding profound respect for its power and peril.
+    The potent <span v-mark.highlight.red="2" class="whitespace-nowrap">alkaloid</span> serves as a double-edged sword in medicine, offering profound relief while demanding profound respect for its power and peril.
   </div>
 </div>
 
-<div class="p-4 bg-gradient-to-r from-rose-50 to-pink-100 dark:from-rose-900/40 dark:to-pink-800/40 rounded-xl border-l-4 border-rose-500">
+<div v-click class="p-4 bg-gradient-to-r from-rose-50 to-pink-100 dark:from-rose-900/40 dark:to-pink-800/40 rounded-xl border-l-4 border-rose-500">
   <div class="text-sm text-rose-600 dark:text-rose-300 font-semibold mb-2">中文释义</div>
   <div class="text-base">
   这种强效的<span class="text-rose-600 dark:text-rose-300 font-bold">生物碱</span>在医学中是一把双刃剑，既能提供深度的缓解，也要求人们对其威力与风险抱有深切的敬畏。
@@ -978,9 +998,10 @@ layoutClass: gap-8
 
 ::right::
 
+<v-click>
 <div class="mt-4">
   <img src="https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&w=600" class="rounded-lg shadow-lg max-h-48 w-auto" alt="Chemical molecular structure" />
-  <div class="text-xs text-gray-400 mt-2">图：化学分子结构</div>
+  <div class="text-xs text-gray-400 mt-2">图：化学研究（凑合着吧找不着了）</div>
 </div>
 
 <div class="mt-8 p-4 bg-rose-50 dark:bg-rose-900 rounded-lg">
@@ -992,6 +1013,7 @@ layoutClass: gap-8
     🇬🇧 英式
   </button>
 </div>
+</v-click>
 
 <script setup>
 const speak = (word, lang) => {
@@ -1033,7 +1055,7 @@ layoutClass: gap-8
   <span class="text-gray-600 dark:text-gray-400">🇺🇸/🇬🇧</span> /ˌθerəˈpjuːtɪk/
 </div>
 
-<div class="p-4 bg-gradient-to-r from-emerald-50 to-teal-100 dark:from-emerald-900 dark:to-teal-800 rounded-xl mb-6 border-l-4 border-emerald-500">
+<div v-click class="p-4 bg-gradient-to-r from-emerald-50 to-teal-100 dark:from-emerald-900 dark:to-teal-800 rounded-xl mb-6 border-l-4 border-emerald-500">
   <div class="text-sm text-emerald-600 dark:text-emerald-300 font-semibold mb-2">词性与释义</div>
   <div class="text-lg">
     <span class="text-emerald-700 dark:text-emerald-200 font-bold">adj.</span> 
@@ -1041,14 +1063,14 @@ layoutClass: gap-8
   </div>
 </div>
 
-<div class="p-4 bg-emerald-50 dark:bg-emerald-900/20 rounded-xl mb-4 border border-emerald-200 dark:border-emerald-700">
+<div v-click class="p-4 bg-emerald-50 dark:bg-emerald-900/20 rounded-xl mb-4 border border-emerald-200 dark:border-emerald-700">
   <div class="text-sm text-emerald-600 dark:text-emerald-300 font-semibold mb-2">📝 例句</div>
   <div class="text-base leading-relaxed">
-    The doctor encouraged her patient to keep a <span v-mark.highlight.indigo="1" class="whitespace-nowrap">therapeutic journal</span> to express emotions and reduce stress during treatment.
+    The doctor encouraged her patient to keep a <span v-mark.highlight.indigo="2" class="whitespace-nowrap">therapeutic journal</span> to express emotions and reduce stress during treatment.
   </div>
 </div>
 
-<div class="p-4 bg-gradient-to-r from-emerald-50 to-teal-100 dark:from-emerald-900/40 dark:to-teal-800/40 rounded-xl border-l-4 border-emerald-500">
+<div v-click class="p-4 bg-gradient-to-r from-emerald-50 to-teal-100 dark:from-emerald-900/40 dark:to-teal-800/40 rounded-xl border-l-4 border-emerald-500">
   <div class="text-sm text-emerald-600 dark:text-emerald-300 font-semibold mb-2">中文释义</div>
   <div class="text-base">
   医生鼓励她的病人坚持写具有<span class="text-emerald-600 dark:text-emerald-300 font-bold">治疗作用</span>的日记，在治疗期间表达情绪并减轻压力。
@@ -1057,9 +1079,10 @@ layoutClass: gap-8
 
 ::right::
 
+<v-click>
 <div class="mt-4">
-  <img src="https://images.pexels.com/photos/3770289/pexels-photo-3770289.jpeg?auto=compress&cs=tinysrgb&w=600" class="rounded-lg shadow-lg max-h-48 w-auto" alt="Writing journal" />
-  <div class="text-xs text-gray-400 mt-2">图：写治疗性日记</div>
+  <img src="/public/pexels-arina-krasnikova-6653888.jpg" class="rounded-lg shadow-lg max-h-48 w-auto" alt="Writing journal" />
+  <div class="text-xs text-gray-400 mt-2">图：泡茶</div>
 </div>
 
 <div class="mt-8 p-4 bg-emerald-50 dark:bg-emerald-900 rounded-lg">
@@ -1071,6 +1094,7 @@ layoutClass: gap-8
     🇬🇧 英式
   </button>
 </div>
+</v-click>
 
 <script setup>
 const speak = (word, lang) => {
